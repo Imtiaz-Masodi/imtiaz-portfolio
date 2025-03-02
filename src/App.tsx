@@ -1,8 +1,15 @@
+import About from "./components/About";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+
 function App() {
   return (
-    <div className="container mx-auto w-full text-center py-8 bg-emerald-100 text-emerald-700">
-      Portfolio application development in progress...
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <About />
+      <div className="bg-sky-100 w-screen h-40"></div>
+    </>
   );
 }
 

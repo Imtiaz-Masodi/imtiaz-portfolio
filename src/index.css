@@ -1,6 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tangerine:wght@400;700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Open Sans", sans-serif;
+  --font-sans: Inter, sans-serif;
+  --font-cursive: Tangerine, cursive;
+  --color-background-light: #f1f1f1;
+  --color-background-dark: #1d1d1d;
+}
+
+.bg-hero {
+  background-image: radial-gradient(
+    145.05% 100% at 50% 0,
+    #1d2b41 0,
+    #020509 57.38%,
+    #0f1a29 88.16%
+  );
+}
+
+.hero-title {
+  background-image: radial-gradient(
+    138.06% 1036.51% at 95.25% -2.54%,
+    #7ed4fd 14.06%,
+    #709df7 51.02%,
+    #4d78ef 79.09%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(2rem, 5vw, 7rem);
+  line-height: 1.25em;
+}
+
+.text-hero-tag {
+  font-size: clamp(1.2rem, 3vw, 2rem);
 }
